@@ -1,0 +1,38 @@
+/*content adjustment according to sidebar condition active or not*/
+#content{
+  margin-left: 200px;
+}
+
+.closed{
+  margin-left: 80px !important;
+}
+
+
+#body{
+  margin-top: 80px;
+ }
+.fright{
+  float: right;
+  margin: 3px;
+  position: relative;
+}
+
+#header{
+  position: fixed;
+  background: white;
+  margin-top: 0;
+  padding: 10px;
+  top:0;
+  right:0;
+  left: 200px;
+  border-bottom: 1px solid  black;
+}
+/*-------------------------------------------------
+MEDIA queries
+---------------------------------------------------*/
+@media (max-width: 768px) {
+  #content{
+    margin-left: 80px !important;
+  }
+}
+

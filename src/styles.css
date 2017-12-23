@@ -59,11 +59,15 @@ i, span {
 }
 
 #sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  background: #7386D5;
-  color: #fff;
+  min-width: 200px;
+  max-width: 200px;
+  background: #29363d;
+  color: white ;
   transition: all 0.3s;
+  position: fixed;
+  overflow-y: auto;
+  top:0;
+  bottom:0;
 }
 
 #sidebar.active {
@@ -71,7 +75,6 @@ i, span {
   max-width: 80px;
   text-align: center;
 }
-
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
   display: none;
 }
@@ -111,8 +114,8 @@ i, span {
 }
 
 #sidebar .sidebar-header {
-  padding: 20px;
-  background: #6d7fcc;
+  padding: 2px;
+  background: white;
 }
 
 #sidebar .sidebar-header strong {
@@ -122,6 +125,7 @@ i, span {
 
 #sidebar ul.components {
   padding: 20px 0;
+  padding-top: 0;
   border-bottom: 1px solid #47748b;
 }
 
@@ -131,16 +135,17 @@ i, span {
   display: block;
 }
 #sidebar ul li a:hover {
-  color: #7386D5;
+  color: #212b31;
   background: #fff;
 }
 #sidebar ul li a i {
   margin-right: 10px;
+  color: #386179;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #fff;
-  background: #6d7fcc;
+  background: #212b31;
 }
 
 
@@ -164,7 +169,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #6d7fcc;
+  background: #212b31;
 }
 
 ul.CTAs {
@@ -209,7 +214,7 @@ a.article, a.article:hover {
     min-width: 80px;
     max-width: 80px;
     text-align: center;
-    margin-left: -80px !important ;
+    /*margin-left: -80px !important ;*/
   }
   a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     top: auto;
@@ -233,17 +238,20 @@ a.article, a.article:hover {
 
   #sidebar ul li a {
     padding: 20px 10px;
+    text-align: center;
   }
 
   #sidebar ul li a span {
     font-size: 0.85em;
   }
   #sidebar ul li a i {
+    text-align: center;
     margin-right:  0;
     display: block;
   }
 
   #sidebar ul ul a {
+    text-align: center;
     padding: 10px !important;
   }
 
@@ -256,5 +264,6 @@ a.article, a.article:hover {
   #sidebarCollapse span {
     display: none;
   }
+
 }
 

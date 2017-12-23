@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ProgressBarModule} from "ng2-progress-bar";
 
 @Component({
   selector: 'app-root',
